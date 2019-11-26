@@ -7,17 +7,20 @@ public class Mage extends Hero {
     }
 
     @Override
-    public void firePrimary() {
+    public void firePrimary(Hero hero) {
         mana -=15;
+        hero.receiveHit(20);
     }
 
     @Override
-    public void fireSecondery() {
+    public void fireSecondery(Hero hero) {
         mana -= 40;
+        hero.receiveHit(50);
     }
 
     @Override
-    public void receiveHit() {
-        hp -= 30;
+    public void receiveHit(int power) {
+        hp -= 2 * power;
+
     }
 }

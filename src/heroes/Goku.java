@@ -7,18 +7,20 @@ public class Goku extends Hero {
     }
 
     @Override
-    public void firePrimary() {
+    public void firePrimary(Hero hero) {
         mana -= 5;
+        hero.receiveHit(5);
     }
 
     @Override
-    public void fireSecondery() {
+    public void fireSecondery(Hero hero) {
       mana -= 40;
+      hero.receiveHit(30);
     }
 
     @Override
-    public void receiveHit() {
-      hp -= 1;
+    public void receiveHit(int power) {
+      hp -= power / 2;
       mana += 3;
     }
 }

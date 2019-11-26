@@ -5,11 +5,15 @@ public class VetProgram {
         Bear winnie = new Bear();
         Lion simba = new Lion();
         Chicken kfc = new Chicken();
+        Robodog foca = new Robodog();
         Vet marcel = new Vet();
 
 
         marcel.makeShot(simba);
         marcel.makeShot(kfc);
         marcel.makeShot(winnie);
+        marcel.makeShot(foca);
+
+        foca.recharge();
     }
 }

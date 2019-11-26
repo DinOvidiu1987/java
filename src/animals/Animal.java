@@ -1,5 +1,5 @@
 package animals;
 
-public abstract class Animal {
-    public abstract void makeNoise();
+public interface Animal {
+     void makeNoise();
 }

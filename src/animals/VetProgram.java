@@ -1,5 +1,7 @@
 package animals;
 
+import animals.vet.Vet;
+
 public class VetProgram {
     public static void main(String[] args) {
         Bear winnie = new Bear();

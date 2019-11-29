@@ -24,7 +24,6 @@ public class Calculator {
         if( b==0) {
             throw new InvalidParameterException();
         }
-        int c = a / b;
-        System.out.println(a + "/" + b + "=" + c);
+
     }
 }

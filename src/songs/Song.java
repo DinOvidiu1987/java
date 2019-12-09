@@ -19,6 +19,6 @@ public class Song implements Comparable<Song> {
 
     @Override
     public int compareTo(Song o) {
-        return this.title.compareTo(o.title);
+        return o.artist.compareTo(artist);
     }
 }

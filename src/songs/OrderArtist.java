@@ -6,6 +6,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashSet;
 import java.util.TreeSet;
 
 public class OrderArtist {
@@ -13,7 +14,7 @@ public class OrderArtist {
         try {
             BufferedReader file = new BufferedReader(new FileReader("titles.txt"));
             String line;
-            TreeSet<Song> songs = new TreeSet<>();
+            HashSet<Song> songs = new HashSet<>();
 
             while ((line = file.readLine()) != null) {
                 String[] parts = line.split("/");
